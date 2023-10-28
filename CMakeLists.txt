@@ -7,5 +7,3 @@ project(
   LANGUAGES CXX)
 
 add_subdirectory(src)
-
-set(ARRAY_TOOLS_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include)

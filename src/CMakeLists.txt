@@ -1,5 +1,5 @@
 add_library(
-  binary_tools STATIC
+  Array_Tools STATIC
   endian_convertion.cpp
   ${PROJECT_SOURCE_DIR}/include/endian_convertion.hpp
   fstream_vector.cpp
@@ -9,11 +9,11 @@ add_library(
   vector_u8_reinterpret_cast.cpp
   ${PROJECT_SOURCE_DIR}/include/vector_u8_reinterpret_cast.hpp)
 
-target_include_directories(binary_tools PUBLIC ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(Array_Tools PUBLIC ${PROJECT_SOURCE_DIR}/include)
 
-target_compile_definitions(binary_tools PUBLIC binary_tools_PUBLIC)
-target_compile_definitions(binary_tools PRIVATE binary_tools_PRIVATE)
+target_compile_definitions(Array_Tools PUBLIC Array_Tools_PUBLIC)
+target_compile_definitions(Array_Tools PRIVATE Array_Tools_PRIVATE)
 
-target_compile_features(binary_tools PRIVATE cxx_std_20)
-target_compile_features(binary_tools PUBLIC cxx_std_17)
-target_compile_options(binary_tools PRIVATE -lc++fs)
+target_compile_features(Array_Tools PRIVATE cxx_std_20)
+target_compile_features(Array_Tools PUBLIC cxx_std_17)
+target_compile_options(Array_Tools PRIVATE -lc++fs)

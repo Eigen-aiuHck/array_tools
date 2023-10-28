@@ -2,7 +2,7 @@
 #include "vector_u8_reinterpret_cast.hpp"
 
 #include <cstdint>
-#include <endian.h>
+#include <bit>
 #include <iostream>
 #include <vector>
 

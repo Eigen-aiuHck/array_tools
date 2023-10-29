@@ -1,13 +1,11 @@
 add_library(
   Array_Tools STATIC
-  endian_convertion.cpp
-  ${PROJECT_SOURCE_DIR}/include/endian_convertion.hpp
-  fstream_vector.cpp
-  ${PROJECT_SOURCE_DIR}/include/fstream_vector.hpp
-  thread_manager.cpp
-  ${PROJECT_SOURCE_DIR}/include/thread_manager.hpp
-  vector_u8_reinterpret_cast.cpp
-  ${PROJECT_SOURCE_DIR}/include/vector_u8_reinterpret_cast.hpp)
+  array_tools/endian_convertion.cpp
+  ${PROJECT_SOURCE_DIR}/include/array_tools/endian_convertion.hpp
+  array_tools/fstream_vector.cpp
+  ${PROJECT_SOURCE_DIR}/include/array_tools/fstream_vector.hpp
+  array_tools/vector_u8_reinterpret_cast.cpp
+  ${PROJECT_SOURCE_DIR}/include/array_tools/vector_u8_reinterpret_cast.hpp)
 
 target_include_directories(Array_Tools PUBLIC ${PROJECT_SOURCE_DIR}/include)
 
